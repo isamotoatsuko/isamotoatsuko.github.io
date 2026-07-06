@@ -27,7 +27,7 @@ body{font-family:'Noto Sans JP',sans-serif;color:var(--ink);background:var(--whi
 img{max-width:100%;display:block}
 a{color:var(--blue);text-decoration:none}
 .serif{font-family:'Shippori Mincho',serif}
-.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
 section{padding:96px 0}
 .sec-label{display:flex;align-items:center;gap:14px;margin-bottom:10px;color:var(--gold);font-weight:500;letter-spacing:.3em;font-size:12px;text-transform:uppercase}
 .sec-label::before{content:"";width:36px;height:1px;background:var(--gold)}
@@ -52,7 +52,7 @@ nav a:hover{color:var(--blue)}
 
 /* hero */
 .hero{margin-top:64px;background:linear-gradient(100deg,rgba(255,255,255,.95) 0%,rgba(255,255,255,.82) 42%,rgba(238,243,245,.35) 100%),url('photos/hero.jpg') center/cover no-repeat;position:relative;border-bottom:1px solid var(--line)}
-.hero-in{display:flex;align-items:center;min-height:min(78vh,640px);padding:90px 0 110px;position:relative;z-index:1}
+.hero-in{display:flex;align-items:center;min-height:min(78vh,640px);padding-top:90px;padding-bottom:110px;position:relative;z-index:1}
 .hero-txt{max-width:620px}
 .hero-catch{font-family:'Shippori Mincho',serif;font-size:clamp(27px,4.4vw,42px);font-weight:600;line-height:1.7;letter-spacing:.1em}
 .hero-catch em{font-style:normal;background:linear-gradient(transparent 84%,rgba(168,132,46,.45) 84%)}
@@ -68,7 +68,7 @@ nav a:hover{color:var(--blue)}
 .btn-main:hover{background:var(--blue)}
 .btn-sub{background:transparent;color:var(--blue-deep);border:1px solid var(--blue-deep)}
 .btn-sub:hover{background:var(--blue-pale)}
-@media(max-width:760px){.hero-in{padding:60px 0 80px}}
+@media(max-width:760px){.hero-in{padding-top:60px;padding-bottom:80px}}
 
 /* about */
 .about-box{display:flex;gap:48px;align-items:flex-start}
@@ -227,7 +227,7 @@ footer small{font-size:11px;color:#8aa0ac;letter-spacing:.1em}
     <div class="hero-txt">
       <p class="hero-catch" data-en="May this world be&lt;br&gt;&lt;em&gt;a lovable place&lt;/em&gt;">この世界が<br><em>愛しいもの</em>であるように</p>
       <p class="hero-lead" data-en="Atsuko Isamoto explores the potential of &lt;em style='font-style:normal'&gt;shima&lt;/em&gt; — communities where people support one another — and of people themselves, so that everyone in this world can live a spiritually rich life.">鯨本あつこは、この世界に生きる人々が心豊かであるために、<br class="pc-br">シマ（人と人が支え合うコミュニティ）とひとの可能性を探究しています。</p>
-      <p class="hero-name"><span data-en="Editor of Islands &amp; Forests / Shima Explorer">島と森の編集者／シマ探究者</span>
+      <p class="hero-name"><span data-en="Editor of Islands &amp; Forests / Explorer of Shima and People">島と森の編集者／シマとひとの探究者</span>
         <strong data-en="Atsuko Isamoto">鯨本 あつこ</strong>
         <span style="font-size:12px;letter-spacing:.2em;" data-en="ISAMOTO ATSUKO">いさもと・あつこ</span>
       </p>
@@ -246,7 +246,7 @@ footer small{font-size:11px;color:#8aa0ac;letter-spacing:.1em}
     <h2 data-en="Profile">プロフィール</h2>
     <div class="about-box">
       <div class="about-txt fade">
-        <p class="about-title" data-en="Editor of Islands &amp; Forests / Shima Explorer">島と森の編集者／シマ探究者</p>
+        <p class="about-title" data-en="Editor of Islands &amp; Forests / Explorer of Shima and People">島と森の編集者／シマとひとの探究者</p>
         <p data-en="Born in 1982 in Hita, Oita Prefecture. Representative Director of NPO Ritokei (The Archipelago News) and Chief Editor of ritokei, a media outlet specializing in Japan's inhabited remote islands. After working as a regional magazine editor, an advertising director for an economic magazine and an illustrator, she founded Ritokei in 2010.">1982年生まれ。大分県日田市出身。NPO法人離島経済新聞社代表理事、有人離島専門メディア『ritokei（リトケイ）』統括編集長。地方誌編集者、経済誌の広告ディレクター、イラストレーター等を経て2010年に離島経済新聞社を設立。</p>
         <p style="margin-top:14px;" data-en="With the mission of passing on the treasures of the islands to the future, she provides information on and supports the revitalization of more than 400 inhabited remote islands across Japan, while also engaging in project production, talent development, PR direction, lectures and writing in the fields of community building and editorial design. A mother of two, she is now based in Hita and travels to islands throughout Japan.">「島の宝を未来につなぐ」ことを目的に、国内400島余りの有人離島地域の情報発信および地域振興のサポートを行うほか、地域づくりや編集デザインの領域で事業プロデュース、人材育成、広報ディレクション、講演、執筆等に携わる。2児の母。現在は日田を生活拠点に全国の島々を飛びまわる。</p>
         <p style="margin-top:14px;" data-en="Her favorite pastimes: people, sake and pondering.">趣味は人とお酒と考えごと。</p>
